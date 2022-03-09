@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="gerenciador:war2">
+    <output-path>$PROJECT_DIR$/out/artifacts/gerenciador_war2</output-path>
+    <root id="archive" name="gerenciador_war.war">
+      <element id="artifact" artifact-name="gerenciadorTeste:war" />
+    </root>
+  </artifact>
+</component>

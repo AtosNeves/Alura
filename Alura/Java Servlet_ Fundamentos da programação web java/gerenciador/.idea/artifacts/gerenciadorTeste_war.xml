@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact type="war" build-on-make="true" name="gerenciadorTeste:war">
+    <output-path>$PROJECT_DIR$/../../../../Gerenciador Deploy</output-path>
+    <root id="archive" name="gerenciadorTeste_war.war">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="gerenciador" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/target/gerenciador-1.0-SNAPSHOT/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="gerenciador/web/Web" />
+    </root>
+  </artifact>
+</component>
