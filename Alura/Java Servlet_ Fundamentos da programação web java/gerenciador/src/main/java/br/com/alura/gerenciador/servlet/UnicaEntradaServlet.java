@@ -7,7 +7,7 @@ import javax.servlet.http.*;
 import javax.servlet.annotation.*;
 import java.io.IOException;
 
-@WebServlet("/entrada")
+//@WebServlet("/entrada")
 public class UnicaEntradaServlet extends HttpServlet {
 	
 	@Override
@@ -15,14 +15,14 @@ public class UnicaEntradaServlet extends HttpServlet {
 		
 		String paramAcao = req.getParameter("acao");
 		
-		HttpSession sessao = req.getSession();
-		boolean usuarioNaoEstaLogado = (sessao.getAttribute("usuarioLogado")==null);
-		boolean ehUmaAcaoProtegida = !(paramAcao.equals("Login")||paramAcao.equals("LoginForm"));
-		
-		if(ehUmaAcaoProtegida && usuarioNaoEstaLogado){
-			resp.sendRedirect( "entrada?acao=LoginForm");
-			return;
-		}
+//		HttpSession sessao = req.getSession();
+//		boolean usuarioNaoEstaLogado = (sessao.getAttribute("usuarioLogado")==null);
+//		boolean ehUmaAcaoProtegida = !(paramAcao.equals("Login")||paramAcao.equals("LoginForm"));
+//
+//		if(ehUmaAcaoProtegida && usuarioNaoEstaLogado){
+//			resp.sendRedirect( "entrada?acao=LoginForm");
+//			return;
+//		}
 		
 		
 		
